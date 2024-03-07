@@ -6,22 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf-export": "source .env.local && contentful space export --config contentfulsync/export/config/export-config.json --management-token $CONTENTFUL_MANAGEMENT_TOKEN --space-id $CONTENTFUL_SPACE_ID",
+    "cf-model-export": "source .env.local && contentful space export --config contentfulsync/export/config/export-config-contentmodel.json --management-token $CONTENTFUL_MANAGEMENT_TOKEN --space-id $CONTENTFUL_SPACE_ID",
+    "cf-import": "source .env.local && contentful space import --config contentfulsync/import/config/contentful-import-config.json --management-token $CONTENTFUL_MANAGEMENT_TOKEN --space-id $CONTENTFUL_SPACE_ID",
+    "graphql-codegen:generate": "graphql-codegen -r dotenv/config --config codegen.ts dotenv_config_path=.env.local",
+    "graphql-codegen:watch": "graphql-codegen --watch -r dotenv/config --config codegen.ts dotenv_config_path=.env.local"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/introspection": "^4.0.3",
+    "@graphql-codegen/typescript-graphql-request": "^6.2.0",
+    "contentful-cli": "^3.1.44",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
     "postcss": "^8",
     "tailwindcss": "^3",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6"
+    "typescript": "^5"
   }
 }
