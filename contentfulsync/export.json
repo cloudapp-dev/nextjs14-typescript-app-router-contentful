@@ -265,7 +265,7 @@
         "id": "pageBlogPost",
         "type": "ContentType",
         "createdAt": "2024-03-07T17:43:55.227Z",
-        "updatedAt": "2024-03-07T17:43:56.677Z",
+        "updatedAt": "2024-03-08T14:07:21.253Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -273,8 +273,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-03-07T17:43:56.677Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-08T14:07:21.253Z",
         "firstPublishedAt": "2024-03-07T17:43:56.677Z",
         "createdBy": {
           "sys": {
@@ -290,8 +290,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -404,7 +404,7 @@
           "name": "Featured image",
           "type": "Link",
           "localized": false,
-          "required": true,
+          "required": false,
           "validations": [
             {
               "linkMimetypeGroup": [
@@ -882,7 +882,7 @@
             "linkType": "Space"
           }
         },
-        "version": 2,
+        "version": 6,
         "createdAt": "2024-03-07T17:43:56.835Z",
         "createdBy": {
           "sys": {
@@ -891,7 +891,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-03-07T17:43:59.539Z",
+        "updatedAt": "2024-03-08T14:07:21.862Z",
         "updatedBy": {
           "sys": {
             "id": "7FLuNcp5oDnApKvaq1pqBW",
@@ -1419,7 +1419,7 @@
         "id": "5Ffob3XoJGrQuKE5uRUugR",
         "type": "Entry",
         "createdAt": "2024-03-07T17:44:23.333Z",
-        "updatedAt": "2024-03-07T17:45:04.659Z",
+        "updatedAt": "2024-03-08T14:07:41.703Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1427,8 +1427,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-03-07T17:45:04.659Z",
+        "publishedVersion": 11,
+        "publishedAt": "2024-03-08T14:07:41.703Z",
         "firstPublishedAt": "2024-03-07T17:44:25.533Z",
         "createdBy": {
           "sys": {
@@ -1444,8 +1444,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 5,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1497,67 +1497,72 @@
         "shortDescription": {
           "en-US": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n\"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\""
         },
-        "featuredImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "5JJt2CzJrdOueXIh1z9o85"
-            }
-          }
-        },
         "content": {
           "en-US": {
+            "nodeType": "document",
             "data": {
             },
             "content": [
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "nodeType": "text",
                     "value": "orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices cursus consequat. Integer rhoncus, nulla et sodales bibendum, augue tortor ultrices dolor, id malesuada lectus leo quis ante. Mauris nisl mauris, iaculis ut fermentum non, efficitur quis sem. Donec mattis augue in libero commodo, auctor hendrerit dui lobortis. Phasellus lacinia ornare sapien, vel venenatis arcu pellentesque vel. Quisque id dui in mi mollis posuere. In sed nisl nisl. Aenean vel malesuada arcu, sit amet blandit dui. Pellentesque nec mattis ipsum, vel ultrices quam.",
-                    "nodeType": "text"
+                    "marks": [
+                    ],
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "embedded-entry-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "43wUdTg2SEQFaOomKG6WrE",
+                      "type": "Link",
+                      "linkType": "Entry"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "nodeType": "text",
                     "value": "Proin tristique nec leo ac egestas. Sed in facilisis ex. Proin convallis mauris eu tortor aliquam, ut luctus nisi tincidunt. Ut iaculis sed dui eu ultrices. Duis id turpis consectetur, venenatis lorem vitae, maximus dui. Ut euismod est urna, vitae bibendum nisi dapibus in. Nullam laoreet et purus tempus dapibus. Duis viverra mollis tellus, et faucibus eros posuere ut. Nam consectetur dolor quis ex volutpat tristique. Maecenas a ullamcorper velit. Morbi mauris mi, ullamcorper nec mi vitae, vehicula congue urna. Vivamus nec aliquam nisl. Proin dictum maximus lectus, gravida scelerisque quam. Aliquam a magna quam.",
-                    "nodeType": "text"
+                    "marks": [
+                    ],
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
+                    "nodeType": "text",
+                    "value": "Maecenas ornare imperdiet purus, sit amet tristique velit posuere pellentesque. Duis ac venenatis augue. Morbi eu commodo nisi. Sed vehicula ut purus eu mattis. Vestibulum gravida quis orci eget fringilla. Etiam id suscipit mauris, eget venenatis mi. Nullam ornare quam eu imperdiet molestie. Vestibulum libero dolor, consectetur vel placerat vitae, tempor vel orci. Aliquam vel pharetra mi. Nulla nec scelerisque purus.",
                     "marks": [
                     ],
-                    "value": "Maecenas ornare imperdiet purus, sit amet tristique velit posuere pellentesque. Duis ac venenatis augue. Morbi eu commodo nisi. Sed vehicula ut purus eu mattis. Vestibulum gravida quis orci eget fringilla. Etiam id suscipit mauris, eget venenatis mi. Nullam ornare quam eu imperdiet molestie. Vestibulum libero dolor, consectetur vel placerat vitae, tempor vel orci. Aliquam vel pharetra mi. Nulla nec scelerisque purus.",
-                    "nodeType": "text"
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               }
-            ],
-            "nodeType": "document"
+            ]
           }
         }
       }
