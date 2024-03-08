@@ -1,6 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`npx create-next-app@13.5.6`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+
+Install npm packages
+
+```bash
+npm i
+```
+
+Create .env.local file (use .env.local.example and rename it) and add the needed env-values
+
+```bash
+CONTENTFUL_SPACE_ID=xxxx
+CONTENTFUL_ACCESS_TOKEN=xxxx
+CONTENTFUL_PREVIEW_ACCESS_TOKEN=xxxx
+CONTENTFUL_MANAGEMENT_TOKEN=xxxx
+CONTENTFUL_PREVIEW_SECRET=xxxx
+```
+
+import data to your contentful space
+
+Check tutorial ->
 
 First, run the development server:
 
