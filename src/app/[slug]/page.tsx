@@ -5,10 +5,45 @@ import { ArticleHero } from "@/components/contentful/ArticleHero";
 import { ArticleTileGrid } from "@/components/contentful/ArticleTileGrid";
 import { Container } from "@/components/contentful/container/Container";
 
-async function BlogPostPage() {
+interface BlogPostPageParams {
+  slug: string;
+  locale: string;
+}
+
+interface BlogPostPageProps {
+  params: BlogPostPageParams;
+}
+
+const locales = ["de-DE"]; //Fake locales for the purpose of the example
+// Tell Next.js about all our blog posts so
+// they can be statically generated at build time.
+export async function generateStaticParams(): Promise<BlogPostPageParams[]> {
+  const dataPerLocale = locales
+    ? await Promise.all(
+        locales.map((locale) => client.pageBlogPostCollection({ limit: 100 }))
+      )
+    : [];
+
+  const paths = dataPerLocale
+    .flatMap((data, index) =>
+      data.pageBlogPostCollection?.items.map((blogPost) =>
+        blogPost?.slug
+          ? {
+              slug: blogPost.slug,
+              locale: locales?.[index] || "",
+            }
+          : undefined
+      )
+    )
+    .filter(Boolean);
+
+  return paths as BlogPostPageParams[];
+}
+
+async function BlogPostPage({ params }: BlogPostPageProps) {
   const [blogPagedata] = await Promise.all([
     client.pageBlogPost({
-      slug: "testblogpost",
+      slug: params.slug.toString(),
     }),
   ]);
 

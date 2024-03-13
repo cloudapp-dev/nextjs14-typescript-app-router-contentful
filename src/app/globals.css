@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply text-sm dark:text-gray400 text-gray800 md:text-sm;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .h1,
+  h1 {
+    @apply text-xl font-semibold dark:text-[#FAFAFA] text-gray600 leading-tighter md:text-4xl;
+  }
+
+  .h2,
+  h2 {
+    @apply text-xl font-semibold leading-tight dark:text-[#FAFAFA] text-gray600 md:text-3xl;
+  }
+
+  .h3,
+  h3 {
+    @apply text-base font-semibold leading-relaxed dark:text-[#FAFAFA] text-gray600 md:text-xl;
+  }
+
+  .h4,
+  h4 {
+    @apply text-xs font-semibold leading-normal dark:text-[#FAFAFA] text-gray600 md:text-base;
+  }
+
+  p {
+    @apply text-xl leading-normal dark:text-[#FAFAFA] text-gray600 tracking-snug md:leading-normal;
+  }
 }
