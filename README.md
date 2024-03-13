@@ -22,6 +22,12 @@ import data to your contentful space
 
 Check tutorial -> https://www.cloudapp.dev/nextjs-complete-example-typescript-app-router-contentful
 
+or simply run this command after the creation of the .env.local file
+
+```bash
+npm run cf-import
+```
+
 First, run the development server:
 
 ```bash
