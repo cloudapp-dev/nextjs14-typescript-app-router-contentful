@@ -20,7 +20,7 @@ CONTENTFUL_PREVIEW_SECRET=xxxx
 
 import data to your contentful space
 
-Check tutorial -> https://www.cloudapp.dev/nextjs-complete-example-typescript-app-router-contentful
+Check tutorial -> https://www.cloudapp.dev/nextjs14-complete-example-header-footer-tailwindcss-contentful-part3
 
 or simply run this command after the creation of the .env.local file
 
