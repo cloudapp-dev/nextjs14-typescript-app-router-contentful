@@ -42,6 +42,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Or visit the testblog on vercel https://nextjs14-full-example-header-footer.vercel.app/
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ## Deploy on Vercel
