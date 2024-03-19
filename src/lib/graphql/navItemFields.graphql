@@ -1,0 +1,4 @@
+fragment NavItemFields on NavItem {
+  name
+  href
+}

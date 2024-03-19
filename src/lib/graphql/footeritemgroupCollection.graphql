@@ -1,0 +1,7 @@
+query footerItemGroupCollection($locale: String, $preview: Boolean) {
+  footerItemGroupCollection(limit: 10, locale: $locale, preview: $preview) {
+    items {
+      ...FooterItemGroupFields
+    }
+  }
+}

@@ -1,0 +1,27 @@
+fragment NavItemGroupFields on NavItemGroup {
+  __typename
+  sys {
+    id
+    spaceId
+  }
+  name
+  navItemsCollection {
+    __typename
+    items {
+      ...NavItemFields
+    }
+  }
+}
+
+query navItemGroup($locale: String, $preview: Boolean) {
+  navItemGroupCollection(
+    limit: 1
+    locale: $locale
+    preview: $preview
+    where: { mainNav: "Yes" }
+  ) {
+    items {
+      ...NavItemGroupFields
+    }
+  }
+}

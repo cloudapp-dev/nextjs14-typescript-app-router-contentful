@@ -121,7 +121,7 @@ enum AssetOrder {
 }
 
 """
-To have author-related properties [See type definition](https://app.contentful.com/spaces/2x6zi8ugn5pi/content_types/componentAuthor)
+To have author-related properties [See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/componentAuthor)
 """
 type ComponentAuthor implements Entry {
   avatar(locale: String, preview: Boolean): Asset
@@ -201,7 +201,7 @@ enum ComponentAuthorOrder {
 }
 
 """
-To describe an image used in rich text fields [See type definition](https://app.contentful.com/spaces/2x6zi8ugn5pi/content_types/componentRichImage)
+To describe an image used in rich text fields [See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/componentRichImage)
 """
 type ComponentRichImage implements Entry {
   caption(locale: String): String
@@ -267,7 +267,7 @@ enum ComponentRichImageOrder {
 }
 
 """
-To have SEO-related properties to the pages we render [See type definition](https://app.contentful.com/spaces/2x6zi8ugn5pi/content_types/componentSeo)
+To have SEO-related properties to the pages we render [See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/componentSeo)
 """
 type ComponentSeo implements Entry {
   canonicalUrl(locale: String): String
@@ -443,6 +443,79 @@ enum EntryOrder {
   sys_publishedVersion_DESC
 }
 
+"""
+[See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/footerItemGroup)
+"""
+type FooterItemGroup implements Entry {
+  contentfulMetadata: ContentfulMetadata!
+  footerItemsCollection(limit: Int = 100, locale: String, order: [FooterItemGroupFooterItemsCollectionOrder], preview: Boolean, skip: Int = 0, where: NavItemFilter): FooterItemGroupFooterItemsCollection
+  linkedFrom(allowedLocales: [String]): FooterItemGroupLinkingCollections
+  name(locale: String): String
+  sys: Sys!
+}
+
+type FooterItemGroupCollection {
+  items: [FooterItemGroup]!
+  limit: Int!
+  skip: Int!
+  total: Int!
+}
+
+input FooterItemGroupFilter {
+  AND: [FooterItemGroupFilter]
+  OR: [FooterItemGroupFilter]
+  contentfulMetadata: ContentfulMetadataFilter
+  footerItems: cfNavItemNestedFilter
+  footerItemsCollection_exists: Boolean
+  name: String
+  name_contains: String
+  name_exists: Boolean
+  name_in: [String]
+  name_not: String
+  name_not_contains: String
+  name_not_in: [String]
+  sys: SysFilter
+}
+
+type FooterItemGroupFooterItemsCollection {
+  items: [NavItem]!
+  limit: Int!
+  skip: Int!
+  total: Int!
+}
+
+enum FooterItemGroupFooterItemsCollectionOrder {
+  href_ASC
+  href_DESC
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
+type FooterItemGroupLinkingCollections {
+  entryCollection(limit: Int = 100, locale: String, preview: Boolean, skip: Int = 0): EntryCollection
+}
+
+enum FooterItemGroupOrder {
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
 """The 'HexColor' type represents color in `rgb:ffffff` string format."""
 scalar HexColor
 
@@ -580,7 +653,178 @@ The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://
 scalar JSON
 
 """
-To create individual blog posts [See type definition](https://app.contentful.com/spaces/2x6zi8ugn5pi/content_types/pageBlogPost)
+[See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/navItem)
+"""
+type NavItem implements Entry {
+  contentfulMetadata: ContentfulMetadata!
+  href(locale: String): String
+  linkedFrom(allowedLocales: [String]): NavItemLinkingCollections
+  name(locale: String): String
+  sys: Sys!
+}
+
+type NavItemCollection {
+  items: [NavItem]!
+  limit: Int!
+  skip: Int!
+  total: Int!
+}
+
+input NavItemFilter {
+  AND: [NavItemFilter]
+  OR: [NavItemFilter]
+  contentfulMetadata: ContentfulMetadataFilter
+  href: String
+  href_contains: String
+  href_exists: Boolean
+  href_in: [String]
+  href_not: String
+  href_not_contains: String
+  href_not_in: [String]
+  name: String
+  name_contains: String
+  name_exists: Boolean
+  name_in: [String]
+  name_not: String
+  name_not_contains: String
+  name_not_in: [String]
+  sys: SysFilter
+}
+
+"""
+[See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/navItemGroup)
+"""
+type NavItemGroup implements Entry {
+  contentfulMetadata: ContentfulMetadata!
+  linkedFrom(allowedLocales: [String]): NavItemGroupLinkingCollections
+  mainNav(locale: String): String
+  name(locale: String): String
+  navItemsCollection(limit: Int = 100, locale: String, order: [NavItemGroupNavItemsCollectionOrder], preview: Boolean, skip: Int = 0, where: NavItemFilter): NavItemGroupNavItemsCollection
+  sys: Sys!
+}
+
+type NavItemGroupCollection {
+  items: [NavItemGroup]!
+  limit: Int!
+  skip: Int!
+  total: Int!
+}
+
+input NavItemGroupFilter {
+  AND: [NavItemGroupFilter]
+  OR: [NavItemGroupFilter]
+  contentfulMetadata: ContentfulMetadataFilter
+  mainNav: String
+  mainNav_contains: String
+  mainNav_exists: Boolean
+  mainNav_in: [String]
+  mainNav_not: String
+  mainNav_not_contains: String
+  mainNav_not_in: [String]
+  name: String
+  name_contains: String
+  name_exists: Boolean
+  name_in: [String]
+  name_not: String
+  name_not_contains: String
+  name_not_in: [String]
+  navItems: cfNavItemNestedFilter
+  navItemsCollection_exists: Boolean
+  sys: SysFilter
+}
+
+type NavItemGroupLinkingCollections {
+  entryCollection(limit: Int = 100, locale: String, preview: Boolean, skip: Int = 0): EntryCollection
+}
+
+type NavItemGroupNavItemsCollection {
+  items: [NavItem]!
+  limit: Int!
+  skip: Int!
+  total: Int!
+}
+
+enum NavItemGroupNavItemsCollectionOrder {
+  href_ASC
+  href_DESC
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
+enum NavItemGroupOrder {
+  mainNav_ASC
+  mainNav_DESC
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
+type NavItemLinkingCollections {
+  entryCollection(limit: Int = 100, locale: String, preview: Boolean, skip: Int = 0): EntryCollection
+  footerItemGroupCollection(limit: Int = 100, locale: String, order: [NavItemLinkingCollectionsFooterItemGroupCollectionOrder], preview: Boolean, skip: Int = 0): FooterItemGroupCollection
+  navItemGroupCollection(limit: Int = 100, locale: String, order: [NavItemLinkingCollectionsNavItemGroupCollectionOrder], preview: Boolean, skip: Int = 0): NavItemGroupCollection
+}
+
+enum NavItemLinkingCollectionsFooterItemGroupCollectionOrder {
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
+enum NavItemLinkingCollectionsNavItemGroupCollectionOrder {
+  mainNav_ASC
+  mainNav_DESC
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
+enum NavItemOrder {
+  href_ASC
+  href_DESC
+  name_ASC
+  name_DESC
+  sys_firstPublishedAt_ASC
+  sys_firstPublishedAt_DESC
+  sys_id_ASC
+  sys_id_DESC
+  sys_publishedAt_ASC
+  sys_publishedAt_DESC
+  sys_publishedVersion_ASC
+  sys_publishedVersion_DESC
+}
+
+"""
+To create individual blog posts [See type definition](https://app.contentful.com/spaces/msfu6cxjsfn6/content_types/pageBlogPost)
 """
 type PageBlogPost implements Entry {
   author(locale: String, preview: Boolean, where: ComponentAuthorFilter): ComponentAuthor
@@ -628,9 +872,21 @@ type PageBlogPostContentLinks {
 }
 
 type PageBlogPostContentResources {
-  block: [ResourceLink!]!
-  hyperlink: [ResourceLink!]!
-  inline: [ResourceLink!]!
+  block: [PageBlogPostContentResourcesBlock!]!
+  hyperlink: [PageBlogPostContentResourcesHyperlink!]!
+  inline: [PageBlogPostContentResourcesInline!]!
+}
+
+type PageBlogPostContentResourcesBlock implements ResourceLink {
+  sys: ResourceSys!
+}
+
+type PageBlogPostContentResourcesHyperlink implements ResourceLink {
+  sys: ResourceSys!
+}
+
+type PageBlogPostContentResourcesInline implements ResourceLink {
+  sys: ResourceSys!
 }
 
 input PageBlogPostFilter {
@@ -772,17 +1028,22 @@ type Query {
   componentSeo(id: String!, locale: String, preview: Boolean): ComponentSeo
   componentSeoCollection(limit: Int = 100, locale: String, order: [ComponentSeoOrder], preview: Boolean, skip: Int = 0, where: ComponentSeoFilter): ComponentSeoCollection
   entryCollection(limit: Int = 100, locale: String, order: [EntryOrder], preview: Boolean, skip: Int = 0, where: EntryFilter): EntryCollection
+  footerItemGroup(id: String!, locale: String, preview: Boolean): FooterItemGroup
+  footerItemGroupCollection(limit: Int = 100, locale: String, order: [FooterItemGroupOrder], preview: Boolean, skip: Int = 0, where: FooterItemGroupFilter): FooterItemGroupCollection
+  navItem(id: String!, locale: String, preview: Boolean): NavItem
+  navItemCollection(limit: Int = 100, locale: String, order: [NavItemOrder], preview: Boolean, skip: Int = 0, where: NavItemFilter): NavItemCollection
+  navItemGroup(id: String!, locale: String, preview: Boolean): NavItemGroup
+  navItemGroupCollection(limit: Int = 100, locale: String, order: [NavItemGroupOrder], preview: Boolean, skip: Int = 0, where: NavItemGroupFilter): NavItemGroupCollection
   pageBlogPost(id: String!, locale: String, preview: Boolean): PageBlogPost
   pageBlogPostCollection(limit: Int = 100, locale: String, order: [PageBlogPostOrder], preview: Boolean, skip: Int = 0, where: PageBlogPostFilter): PageBlogPostCollection
 }
 
-type ResourceLink {
+interface ResourceLink {
   sys: ResourceSys!
 }
 
 type ResourceSys {
   linkType: String!
-  type: String!
   urn: String!
 }
 
@@ -897,6 +1158,27 @@ input cfComponentSeoNestedFilter {
   pageTitle_not_contains: String
   pageTitle_not_in: [String]
   shareImagesCollection_exists: Boolean
+  sys: SysFilter
+}
+
+input cfNavItemNestedFilter {
+  AND: [cfNavItemNestedFilter]
+  OR: [cfNavItemNestedFilter]
+  contentfulMetadata: ContentfulMetadataFilter
+  href: String
+  href_contains: String
+  href_exists: Boolean
+  href_in: [String]
+  href_not: String
+  href_not_contains: String
+  href_not_in: [String]
+  name: String
+  name_contains: String
+  name_exists: Boolean
+  name_in: [String]
+  name_not: String
+  name_not_contains: String
+  name_not_in: [String]
   sys: SysFilter
 }
 

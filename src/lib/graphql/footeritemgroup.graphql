@@ -1,0 +1,22 @@
+fragment FooterItemGroupFields on FooterItemGroup {
+  __typename
+  sys {
+    id
+    spaceId
+  }
+  name
+  footerItemsCollection {
+    __typename
+    items {
+      ...NavItemFields
+    }
+  }
+}
+
+query footerItemGroup($locale: String, $preview: Boolean) {
+  footerItemGroupCollection(limit: 1, locale: $locale, preview: $preview) {
+    items {
+      ...FooterItemGroupFields
+    }
+  }
+}

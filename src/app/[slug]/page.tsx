@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArticleHero } from "@/components/contentful/ArticleHero";
 import { ArticleTileGrid } from "@/components/contentful/ArticleTileGrid";
 import { Container } from "@/components/contentful/container/Container";
+import { draftMode } from "next/headers";
 
 interface BlogPostPageParams {
   slug: string;
@@ -41,9 +42,11 @@ export async function generateStaticParams(): Promise<BlogPostPageParams[]> {
 }
 
 async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { isEnabled } = draftMode();
   const [blogPagedata] = await Promise.all([
     client.pageBlogPost({
       slug: params.slug.toString(),
+      preview: isEnabled,
     }),
   ]);
 

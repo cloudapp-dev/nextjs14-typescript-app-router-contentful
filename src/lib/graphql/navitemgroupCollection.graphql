@@ -1,0 +1,12 @@
+query navItemGroupCollection($locale: String, $preview: Boolean) {
+  navItemGroupCollection(
+    limit: 10
+    locale: $locale
+    preview: $preview
+    where: { mainNav: "Yes" }
+  ) {
+    items {
+      ...NavItemGroupFields
+    }
+  }
+}
