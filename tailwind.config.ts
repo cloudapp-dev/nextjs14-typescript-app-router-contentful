@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import tokens from "@contentful/f36-tokens";
 const { fontFamily } = require("tailwindcss/defaultTheme");
+const extraColors = require("tailwindcss/colors"); //for extra colors e.g. in the Arctile TOC -> emerald
 
 const colors = Object.entries(tokens).reduce(
   (acc: Record<string, any>, [key, value]) => {
@@ -23,6 +24,7 @@ const config: Config = {
   theme: {
     colors,
     extend: {
+      colors: { emerald: extraColors.emerald },
       maxWidth: {
         "8xl": "90rem",
       },

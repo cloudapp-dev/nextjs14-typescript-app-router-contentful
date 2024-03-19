@@ -31,7 +31,7 @@ export default async function RootLayout({
           <Providers>
             <Header menuItems={headerdata} />
             {draftMode().isEnabled && (
-              <p className="bg-orange-200 py-4 px-[6vw]">
+              <p className="bg-emerald-400 py-4 px-[6vw]">
                 Draft mode is on! <ExitDraftModeLink className="underline" />
               </p>
             )}
