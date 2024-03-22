@@ -23,7 +23,7 @@ const DarkModeButton = () => {
       {mounted && currentTheme === "dark" ? (
         <button
           type="button"
-          className="flex-shrink-0 p-1 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="flex-shrink-0 p-1 bg-white rounded-full hover:text-gray500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           onClick={() => setTheme("light")}
         >
           <span className="sr-only">Set Theme</span>
@@ -32,7 +32,7 @@ const DarkModeButton = () => {
       ) : (
         <button
           type="button"
-          className="flex-shrink-0 p-1 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="flex-shrink-0 p-1 bg-white rounded-full hover:text-gray500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           onClick={() => setTheme("dark")}
         >
           <span className="sr-only">Set Theme</span>

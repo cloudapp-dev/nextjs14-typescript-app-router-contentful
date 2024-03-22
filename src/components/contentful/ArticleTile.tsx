@@ -29,7 +29,7 @@ export const ArticleTile = ({ article, className }: ArticleTileProps) => {
             {...article.featuredImage}
           />
         )}
-        <div className="flex flex-col flex-1 px-4 py-3 bg-gray-100 dark:bg-gray-800 md:px-5 md:py-4 lg:px-7 lg:py-5">
+        <div className="flex flex-col flex-1 px-4 py-3 bg-gray100 dark:bg-gray800 md:px-5 md:py-4 lg:px-7 lg:py-5">
           {title && (
             <p className="mb-2 h3 text-gray800 dark:text-[#AEC1CC] md:mb-3">
               {title}

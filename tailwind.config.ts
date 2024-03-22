@@ -24,7 +24,12 @@ const config: Config = {
   theme: {
     colors,
     extend: {
-      colors: { emerald: extraColors.emerald },
+      colors: {
+        emerald: extraColors.emerald,
+        white: extraColors.white,
+        black: extraColors.black,
+        indigo: extraColors.indigo,
+      },
       maxWidth: {
         "8xl": "90rem",
       },

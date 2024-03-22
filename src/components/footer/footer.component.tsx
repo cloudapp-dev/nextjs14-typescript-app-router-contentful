@@ -7,7 +7,7 @@ export default function Footer({ footerItems }: any) {
     retmain.push(
       <h3
         key={"h3"}
-        className="text-sm font-semibold tracking-wider dark:text-[#AEC1CC] text-gray-500 uppercase"
+        className="text-sm font-semibold tracking-wider dark:text-[#AEC1CC] text-gray500 uppercase"
       >
         {footerItems.name}
       </h3>
@@ -50,7 +50,7 @@ export default function Footer({ footerItems }: any) {
       <li key={index}>
         <a
           href={item.href}
-          className="text-base text-gray-500 hover:text-gray-900"
+          className="text-base text-gray500 hover:text-gray900"
         >
           {item.name}
         </a>
@@ -61,7 +61,7 @@ export default function Footer({ footerItems }: any) {
 
   return (
     <footer
-      className="mt-4 bg-white border-t dark:bg-gray-900"
+      className="mt-4 bg-white border-t dark:bg-gray900"
       aria-labelledby="footer-heading"
     >
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
@@ -78,9 +78,9 @@ export default function Footer({ footerItems }: any) {
           </div>
           <div className="mt-8 xl:mt-0"></div>
         </div>
-        <div className="pt-8 mt-8 border-gray-200 md:flex md:items-center md:justify-between">
+        <div className="pt-8 mt-8 border-gray200 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2"></div>
-          <p className="mt-8 text-base dark:text-[#AEC1CC] text-gray-500 md:mt-0 md:order-1">
+          <p className="mt-8 text-base dark:text-[#AEC1CC] text-gray500 md:mt-0 md:order-1">
             Copyright 2021, All rights reserved.
           </p>
         </div>

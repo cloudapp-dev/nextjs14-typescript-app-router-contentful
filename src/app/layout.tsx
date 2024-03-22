@@ -26,8 +26,9 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head></head>
       <body>
-        <main className={`${urbanist.variable} font-sans dark:bg-gray-900`}>
+        <main className={`${urbanist.variable} font-sans dark:bg-gray900`}>
           <Providers>
             <Header menuItems={headerdata} />
             {draftMode().isEnabled && (
