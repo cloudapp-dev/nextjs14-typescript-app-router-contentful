@@ -42,7 +42,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Or visit the testblog on vercel https://nextjs14-typescript-app-router-contentful-404-loading.vercel.app/
+Or visit the testblog on vercel https://nextjs14-full-example-404-loading.vercel.app/
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
