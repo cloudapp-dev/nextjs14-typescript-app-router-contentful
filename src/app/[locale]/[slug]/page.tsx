@@ -5,6 +5,9 @@ import { ArticleHero } from "@/components/contentful/ArticleHero";
 import { ArticleTileGrid } from "@/components/contentful/ArticleTileGrid";
 import { Container } from "@/components/contentful/container/Container";
 import { draftMode } from "next/headers";
+// Internationalization
+import { createTranslation } from "@/app/i18n/server";
+import { locales, LocaleTypes } from "@/app/i18n/settings";
 
 interface BlogPostPageParams {
   slug: string;
@@ -15,7 +18,8 @@ interface BlogPostPageProps {
   params: BlogPostPageParams;
 }
 
-const locales = ["de-DE"]; //Fake locales for the purpose of the example
+// const locales = ["de-DE"]; //Fake locales for the purpose of the example
+
 // Tell Next.js about all our blog posts so
 // they can be statically generated at build time.
 export async function generateStaticParams(): Promise<BlogPostPageParams[]> {
@@ -24,6 +28,11 @@ export async function generateStaticParams(): Promise<BlogPostPageParams[]> {
         locales.map((locale) => client.pageBlogPostCollection({ limit: 100 }))
       )
     : [];
+
+  // If const dataPerLocale is empty, return an empty array
+  if (!dataPerLocale) {
+    return notFound();
+  }
 
   const paths = dataPerLocale
     .flatMap((data, index) =>
@@ -42,10 +51,11 @@ export async function generateStaticParams(): Promise<BlogPostPageParams[]> {
 }
 
 async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { isEnabled } = draftMode();
+  const { isEnabled } = draftMode(); // Check if draft mode is enabled for Contentful
   const [blogPagedata] = await Promise.all([
     client.pageBlogPost({
       slug: params.slug.toString(),
+      locale: params.locale.toString(),
       preview: isEnabled,
     }),
   ]);
@@ -57,6 +67,9 @@ async function BlogPostPage({ params }: BlogPostPageProps) {
     // tell Next.js to render a 404 page.
     return notFound();
   }
+
+  // Internationalization, get the translation function
+  const { t } = await createTranslation(params.locale as LocaleTypes, "common");
 
   const relatedPosts = blogPost?.relatedBlogPostsCollection?.items;
 
@@ -77,7 +90,10 @@ async function BlogPostPage({ params }: BlogPostPageProps) {
       </Container>
       {relatedPosts.length > 0 && (
         <Container className="max-w-5xl mt-8">
-          <h2 className="mb-4 md:mb-6">Related Posts</h2>
+          {/* Without internationalization: */}
+          {/* <h2 className="mb-4 md:mb-6">Related Posts</h2> */}
+          {/* With internationalization: */}
+          <h2 className="mb-4 md:mb-6">{t("blog.relatedArticles")}</h2>
           <ArticleTileGrid className="md:grid-cols-2" articles={relatedPosts} />
         </Container>
       )}

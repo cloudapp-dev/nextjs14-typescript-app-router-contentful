@@ -7,6 +7,8 @@ import { ArticleAuthor } from "@/components/contentful/ArticleAuthor";
 import { CtfImage } from "@/components/contentful/CtfImage.component";
 import { FormatDate } from "@/components/contentful/format-date/FormatDate";
 import { PageBlogPostFieldsFragment } from "@/lib/__generated/sdk";
+import type { LocaleTypes } from "@/app/i18n/settings";
+import { useParams } from "next/navigation";
 
 interface ArticleTileProps extends HTMLProps<HTMLDivElement> {
   article: PageBlogPostFieldsFragment;
@@ -14,9 +16,10 @@ interface ArticleTileProps extends HTMLProps<HTMLDivElement> {
 
 export const ArticleTile = ({ article, className }: ArticleTileProps) => {
   const { title, publishedDate } = article;
+  const locale = useParams()?.locale as LocaleTypes;
 
   return (
-    <Link className="flex flex-col" href={`${article.slug}`}>
+    <Link className="flex flex-col" href={`/${locale}/${article.slug}`}>
       <div
         className={twMerge(
           "flex flex-1 flex-col overflow-hidden shadow-lg",

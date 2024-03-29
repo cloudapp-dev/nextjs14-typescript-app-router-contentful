@@ -1,9 +1,10 @@
 import { client } from "@/lib/client";
 import { draftMode } from "next/headers";
 
-async function getFooterItems() {
+async function getFooterItems(locale: string) {
   const { isEnabled } = draftMode();
   const entries = await client.footerItemGroup({
+    locale: locale,
     preview: isEnabled,
   });
 
@@ -14,8 +15,8 @@ function extractFooterItemEntries(fetchResponse: any) {
   return fetchResponse?.footerItemGroupCollection?.items?.[0];
 }
 
-export default async function getAllFooteritemsForHome() {
-  const footeritems = await getFooterItems();
+export default async function getAllFooteritemsForHome(locale: string) {
+  const footeritems = await getFooterItems(locale);
 
   return footeritems || [];
 }

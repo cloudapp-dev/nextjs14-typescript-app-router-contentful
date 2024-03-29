@@ -45,7 +45,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/componentRichImage"
       },
       "displayField": "internalName",
       "name": "💎 component - Rich image",
@@ -154,7 +155,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/pageBlogPost"
       },
       "displayField": "internalName",
       "name": "📄 page - Blog post",
@@ -447,7 +449,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/componentSeo"
       },
       "displayField": "internalName",
       "name": "💎 component - SEO",
@@ -605,7 +608,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/componentAuthor"
       },
       "displayField": "internalName",
       "name": "💎 component - Author",
@@ -667,7 +671,7 @@
         "id": "navItem",
         "type": "ContentType",
         "createdAt": "2024-03-18T15:35:04.391Z",
-        "updatedAt": "2024-03-18T15:57:00.634Z",
+        "updatedAt": "2024-03-29T11:13:00.222Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -675,8 +679,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-03-18T15:57:00.634Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-29T11:13:00.222Z",
         "firstPublishedAt": "2024-03-18T15:35:04.727Z",
         "createdBy": {
           "sys": {
@@ -692,15 +696,16 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/navItem"
       },
       "displayField": "name",
       "name": "🧭 Nav Item",
@@ -710,7 +715,7 @@
           "id": "name",
           "name": "Name",
           "type": "Symbol",
-          "localized": false,
+          "localized": true,
           "required": true,
           "validations": [
           ],
@@ -778,7 +783,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/navItemGroup"
       },
       "displayField": "name",
       "name": "✨ NavItemGroup",
@@ -853,7 +859,7 @@
         "id": "footerItemGroup",
         "type": "ContentType",
         "createdAt": "2024-03-19T07:54:02.538Z",
-        "updatedAt": "2024-03-19T07:55:00.240Z",
+        "updatedAt": "2024-03-29T11:20:41.116Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -861,8 +867,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2024-03-19T07:55:00.240Z",
+        "publishedVersion": 7,
+        "publishedAt": "2024-03-29T11:20:41.116Z",
         "firstPublishedAt": "2024-03-19T07:54:02.864Z",
         "createdBy": {
           "sys": {
@@ -878,15 +884,16 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 3,
-        "version": 6,
+        "publishedCounter": 4,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/content_types/footerItemGroup"
       },
       "displayField": "name",
       "name": "🔑 FooterItemGroup",
@@ -896,7 +903,7 @@
           "id": "name",
           "name": "Name",
           "type": "Symbol",
-          "localized": false,
+          "localized": true,
           "required": true,
           "validations": [
           ],
@@ -1459,7 +1466,7 @@
             "linkType": "Space"
           }
         },
-        "version": 4,
+        "version": 6,
         "createdAt": "2024-03-18T15:35:04.837Z",
         "createdBy": {
           "sys": {
@@ -1468,7 +1475,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-03-18T15:57:01.187Z",
+        "updatedAt": "2024-03-29T11:13:00.901Z",
         "updatedBy": {
           "sys": {
             "id": "7FLuNcp5oDnApKvaq1pqBW",
@@ -1614,7 +1621,7 @@
             "linkType": "Space"
           }
         },
-        "version": 6,
+        "version": 8,
         "createdAt": "2024-03-19T07:54:03.002Z",
         "createdBy": {
           "sys": {
@@ -1623,7 +1630,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-03-19T07:55:00.899Z",
+        "updatedAt": "2024-03-29T11:20:41.817Z",
         "updatedBy": {
           "sys": {
             "id": "7FLuNcp5oDnApKvaq1pqBW",
@@ -1757,7 +1764,8 @@
             "linkType": "ContentType",
             "id": "componentAuthor"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/5V3Z9PXIKF0N43geTuL9h"
       },
       "fields": {
         "internalName": {
@@ -1793,7 +1801,7 @@
         "id": "Nog3XuN0cayrPPP7MVRRX",
         "type": "Entry",
         "createdAt": "2024-03-08T14:48:08.194Z",
-        "updatedAt": "2024-03-08T14:48:08.894Z",
+        "updatedAt": "2024-03-29T09:53:30.232Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1801,8 +1809,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-03-08T14:48:08.894Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-29T09:53:30.232Z",
         "firstPublishedAt": "2024-03-08T14:48:08.894Z",
         "createdBy": {
           "sys": {
@@ -1818,8 +1826,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1835,14 +1843,16 @@
             "linkType": "ContentType",
             "id": "componentSeo"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/Nog3XuN0cayrPPP7MVRRX"
       },
       "fields": {
         "internalName": {
           "en-US": "Test Blog Seo Block"
         },
         "pageTitle": {
-          "en-US": "Test Blog Post"
+          "de-DE": "SEO Title Blog Post DE",
+          "en-US": "SEO Title Blog Post"
         },
         "pageDescription": {
           "en-US": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n\"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\""
@@ -1913,7 +1923,8 @@
             "linkType": "ContentType",
             "id": "componentRichImage"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/43wUdTg2SEQFaOomKG6WrE"
       },
       "fields": {
         "internalName": {
@@ -1952,7 +1963,7 @@
         "id": "5Ffob3XoJGrQuKE5uRUugR",
         "type": "Entry",
         "createdAt": "2024-03-08T14:48:08.419Z",
-        "updatedAt": "2024-03-12T11:30:42.101Z",
+        "updatedAt": "2024-03-29T10:00:17.487Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1960,8 +1971,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2024-03-12T11:30:42.101Z",
+        "publishedVersion": 14,
+        "publishedAt": "2024-03-29T10:00:17.487Z",
         "firstPublishedAt": "2024-03-08T14:48:10.503Z",
         "createdBy": {
           "sys": {
@@ -1977,8 +1988,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 6,
+        "version": 15,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1994,7 +2005,8 @@
             "linkType": "ContentType",
             "id": "pageBlogPost"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/5Ffob3XoJGrQuKE5uRUugR"
       },
       "fields": {
         "internalName": {
@@ -2010,7 +2022,7 @@
           }
         },
         "slug": {
-          "en-US": "testblogpost"
+          "en-US": "/"
         },
         "author": {
           "en-US": {
@@ -2025,9 +2037,11 @@
           "en-US": "2024-02-27"
         },
         "title": {
+          "de-DE": "Test Blog Post DE",
           "en-US": "Test Blog Post"
         },
         "shortDescription": {
+          "de-DE": "Subtitle DE",
           "en-US": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n\"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\""
         },
         "featuredImage": {
@@ -2040,6 +2054,28 @@
           }
         },
         "content": {
+          "de-DE": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Content DE",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
           "en-US": {
             "data": {
             },
@@ -2143,7 +2179,7 @@
         "id": "1dGkL5PIaMjzaVwK4yrLgY",
         "type": "Entry",
         "createdAt": "2024-03-12T08:51:48.213Z",
-        "updatedAt": "2024-03-12T11:30:57.027Z",
+        "updatedAt": "2024-03-29T09:52:44.869Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2151,8 +2187,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 12,
-        "publishedAt": "2024-03-12T11:30:57.027Z",
+        "publishedVersion": 15,
+        "publishedAt": "2024-03-29T09:52:44.869Z",
         "firstPublishedAt": "2024-03-12T08:52:02.688Z",
         "createdBy": {
           "sys": {
@@ -2168,8 +2204,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 4,
-        "version": 13,
+        "publishedCounter": 5,
+        "version": 16,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2185,7 +2221,8 @@
             "linkType": "ContentType",
             "id": "pageBlogPost"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/1dGkL5PIaMjzaVwK4yrLgY"
       },
       "fields": {
         "internalName": {
@@ -2216,9 +2253,11 @@
           "en-US": "2024-02-27"
         },
         "title": {
+          "de-DE": "Test Blog Post 2 DE",
           "en-US": "Test Blog Post 2"
         },
         "shortDescription": {
+          "de-DE": "Subtitle DE",
           "en-US": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n\"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\""
         },
         "featuredImage": {
@@ -2231,6 +2270,28 @@
           }
         },
         "content": {
+          "de-DE": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Content DE",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          },
           "en-US": {
             "data": {
             },
@@ -2316,7 +2377,7 @@
         "id": "7pDZ9jGg3vo8elEYooopbv",
         "type": "Entry",
         "createdAt": "2024-03-12T11:30:07.200Z",
-        "updatedAt": "2024-03-14T13:44:00.881Z",
+        "updatedAt": "2024-03-29T09:52:02.098Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2324,8 +2385,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 15,
-        "publishedAt": "2024-03-14T13:44:00.881Z",
+        "publishedVersion": 23,
+        "publishedAt": "2024-03-29T09:52:02.098Z",
         "firstPublishedAt": "2024-03-12T11:30:16.745Z",
         "createdBy": {
           "sys": {
@@ -2341,8 +2402,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 6,
-        "version": 16,
+        "publishedCounter": 8,
+        "version": 24,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2358,7 +2419,8 @@
             "linkType": "ContentType",
             "id": "pageBlogPost"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/7pDZ9jGg3vo8elEYooopbv"
       },
       "fields": {
         "internalName": {
@@ -2389,10 +2451,12 @@
           "en-US": "2024-02-27"
         },
         "title": {
+          "de-DE": "Test Blog Post 3 DE",
           "en-US": "Test Blog Post 3"
         },
         "shortDescription": {
-          "en-US": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n\"There is no one whxxxo loves pain itself, who seeks after it and wants to have it, simply because it is pain...\""
+          "de-DE": "Subtitle DE",
+          "en-US": "\"Neque test porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n\"There is no one whxxxo loves pain itself, who seeks after it and wants to have it, simply because it is pain...\""
         },
         "featuredImage": {
           "en-US": {
@@ -2404,6 +2468,28 @@
           }
         },
         "content": {
+          "de-DE": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Content DE",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          },
           "en-US": {
             "data": {
             },
@@ -2417,7 +2503,7 @@
                     },
                     "marks": [
                     ],
-                    "value": "orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices cursus consequat. Integer rhoncus, nulla et sodales bibendum, augue tortor ultrices dolor, id malesuada lectus leo quis ante. Mauris nisl mauris, iaculis ut fermentum non, efficitur quis sem. Donec mattis augue in libero commodo, auctor hendrerit dui lobortis. Phasellus lacinia ornare sapien, vel venenatis arcu pellentesque vel. Quisque id dui in mi mollis posuere. In sed nisl nisl. Aenean vel malesuada arcu, sit amet blandit dui. Pellentesque nec mattis ipsum, vel ultrices quam.",
+                    "value": "orem jhghtest ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices cursus consequat. Integer rhoncus, nulla et sodales bibendum, augue tortor ultrices dolor, id malesuada lectus leo quis ante. Mauris nisl mauris, iaculis ut fermentum non, efficitur quis sem. Donec mattis augue in libero commodo, auctor hendrerit dui lobortis. Phasellus lacinia ornare sapien, vel venenatis arcu pellentesque vel. Quisque id dui in mi mollis posuere. In sed nisl nisl. Aenean vel malesuada arcu, sit amet blandit dui. Pellentesque nec mattis ipsum, vel ultrices quam.",
                     "nodeType": "text"
                   }
                 ],
@@ -2489,7 +2575,7 @@
         "id": "5gjiQ51jch9GQmFfbtDe4K",
         "type": "Entry",
         "createdAt": "2024-03-18T16:37:30.904Z",
-        "updatedAt": "2024-03-18T16:38:02.552Z",
+        "updatedAt": "2024-03-29T11:13:14.396Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2497,8 +2583,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-03-18T16:38:02.552Z",
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-29T11:13:14.396Z",
         "firstPublishedAt": "2024-03-18T16:38:02.552Z",
         "createdBy": {
           "sys": {
@@ -2514,8 +2600,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 5,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2531,10 +2617,12 @@
             "linkType": "ContentType",
             "id": "navItem"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/5gjiQ51jch9GQmFfbtDe4K"
       },
       "fields": {
         "name": {
+          "de-DE": "Startseite",
           "en-US": "Home"
         },
         "href": {
@@ -2558,7 +2646,7 @@
         "id": "4L0hRQMsVjVLPaTVzJS3HQ",
         "type": "Entry",
         "createdAt": "2024-03-18T16:37:41.788Z",
-        "updatedAt": "2024-03-18T16:37:50.545Z",
+        "updatedAt": "2024-03-29T11:13:22.976Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2566,8 +2654,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-03-18T16:37:50.545Z",
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-29T11:13:22.976Z",
         "firstPublishedAt": "2024-03-18T16:37:50.545Z",
         "createdBy": {
           "sys": {
@@ -2583,8 +2671,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 5,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2600,10 +2688,12 @@
             "linkType": "ContentType",
             "id": "navItem"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/4L0hRQMsVjVLPaTVzJS3HQ"
       },
       "fields": {
         "name": {
+          "de-DE": "Über uns",
           "en-US": "About"
         },
         "href": {
@@ -2669,7 +2759,8 @@
             "linkType": "ContentType",
             "id": "navItemGroup"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/4BnUS1aG8B1qggOv8hlmUY"
       },
       "fields": {
         "name": {
@@ -2714,7 +2805,7 @@
         "id": "4BJZMoy1pBEAJOWNy8azIu",
         "type": "Entry",
         "createdAt": "2024-03-19T07:47:37.363Z",
-        "updatedAt": "2024-03-19T07:47:57.156Z",
+        "updatedAt": "2024-03-29T11:20:24.293Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2722,8 +2813,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2024-03-19T07:47:57.156Z",
+        "publishedVersion": 6,
+        "publishedAt": "2024-03-29T11:20:24.293Z",
         "firstPublishedAt": "2024-03-19T07:47:57.156Z",
         "createdBy": {
           "sys": {
@@ -2739,8 +2830,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2756,10 +2847,12 @@
             "linkType": "ContentType",
             "id": "navItem"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/4BJZMoy1pBEAJOWNy8azIu"
       },
       "fields": {
         "name": {
+          "de-DE": "Datenschutz",
           "en-US": "Privacy Policy"
         },
         "href": {
@@ -2783,7 +2876,7 @@
         "id": "LYVV5auxOlj1LnzrI1a4D",
         "type": "Entry",
         "createdAt": "2024-03-19T07:54:30.489Z",
-        "updatedAt": "2024-03-19T07:54:52.505Z",
+        "updatedAt": "2024-03-29T11:20:49.025Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2791,8 +2884,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-03-19T07:54:52.505Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-03-29T11:20:49.025Z",
         "firstPublishedAt": "2024-03-19T07:54:52.505Z",
         "createdBy": {
           "sys": {
@@ -2808,8 +2901,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 4,
+        "publishedCounter": 2,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2825,10 +2918,12 @@
             "linkType": "ContentType",
             "id": "footerItemGroup"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/LYVV5auxOlj1LnzrI1a4D"
       },
       "fields": {
         "name": {
+          "de-DE": "Rechtliches",
           "en-US": "Legal"
         },
         "footerItems": {
@@ -2867,7 +2962,7 @@
         "id": "5RGJUhWG0v0JN2bfmEIlzg",
         "type": "Entry",
         "createdAt": "2024-03-19T07:54:43.259Z",
-        "updatedAt": "2024-03-19T07:54:49.842Z",
+        "updatedAt": "2024-03-29T11:20:16.746Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2875,8 +2970,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-03-19T07:54:49.842Z",
+        "publishedVersion": 4,
+        "publishedAt": "2024-03-29T11:20:16.746Z",
         "firstPublishedAt": "2024-03-19T07:54:49.842Z",
         "createdBy": {
           "sys": {
@@ -2892,8 +2987,8 @@
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 5,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2909,10 +3004,12 @@
             "linkType": "ContentType",
             "id": "navItem"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/entries/5RGJUhWG0v0JN2bfmEIlzg"
       },
       "fields": {
         "name": {
+          "de-DE": "AGB's",
           "en-US": "Terms"
         },
         "href": {
@@ -2971,7 +3068,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/assets/3AS8xKNQheiITDZuiYwmkT"
       },
       "fields": {
         "title": {
@@ -3042,7 +3140,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/assets/3uCsWf52cDTEB7w0nJ7pl5"
       },
       "fields": {
         "title": {
@@ -3113,7 +3212,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/assets/5JJt2CzJrdOueXIh1z9o85"
       },
       "fields": {
         "title": {
@@ -3187,7 +3287,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/assets/2CX4BWVZ93HWtDhFXEjb0h"
       },
       "fields": {
         "title": {
@@ -3261,7 +3362,8 @@
             "linkType": "User",
             "id": "7FLuNcp5oDnApKvaq1pqBW"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/msfu6cxjsfn6/environments/master/assets/229eTzYgsdvW61HyQ214xF"
       },
       "fields": {
         "title": {
@@ -3288,6 +3390,51 @@
     }
   ],
   "locales": [
+    {
+      "name": "German (Germany)",
+      "code": "de-DE",
+      "fallbackCode": "en-US",
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0IueeMG3cpIAPEKpGbf4dh",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msfu6cxjsfn6"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "d33fc769-067d-4f9b-be91-0dc069641a45"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7FLuNcp5oDnApKvaq1pqBW"
+          }
+        },
+        "createdAt": "2024-03-29T09:46:08Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7FLuNcp5oDnApKvaq1pqBW"
+          }
+        },
+        "updatedAt": "2024-03-29T09:46:08Z"
+      }
+    },
     {
       "name": "English (United States)",
       "code": "en-US",

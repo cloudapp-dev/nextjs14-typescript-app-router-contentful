@@ -1,17 +1,29 @@
 import { ArticleContent } from "@/components/contentful/ArticleContent.component";
+import { createTranslation } from "@/app/i18n/server";
 import { client } from "@/lib/client";
 import { notFound } from "next/navigation";
 import { ArticleHero } from "@/components/contentful/ArticleHero";
 import { ArticleTileGrid } from "@/components/contentful/ArticleTileGrid";
 import { Container } from "@/components/contentful/container/Container";
 import { draftMode } from "next/headers";
+import { locales, LocaleTypes } from "@/app/i18n/settings";
 
-async function BlogPostPage() {
+interface PageParams {
+  slug: string;
+  locale: string;
+}
+
+interface PageProps {
+  params: PageParams;
+}
+
+async function BlogPostPage({ params }: PageProps) {
   const { isEnabled } = draftMode();
 
   const [blogPagedata] = await Promise.all([
     client.pageBlogPost({
-      slug: "testblogpost",
+      slug: "/",
+      locale: params.locale.toString(),
       preview: isEnabled,
     }),
   ]);
@@ -23,6 +35,9 @@ async function BlogPostPage() {
     // tell Next.js to render a 404 page.
     return notFound();
   }
+
+  // Internationalization, get the translation function
+  const { t } = await createTranslation(params.locale as LocaleTypes, "common");
 
   const relatedPosts = blogPost?.relatedBlogPostsCollection?.items;
 
@@ -43,7 +58,10 @@ async function BlogPostPage() {
       </Container>
       {relatedPosts.length > 0 && (
         <Container className="max-w-5xl mt-8">
-          <h2 className="mb-4 md:mb-6">Related Posts</h2>
+          {/* Without internationalization: */}
+          {/* <h2 className="mb-4 md:mb-6">Related Posts</h2> */}
+          {/* With internationalization: */}
+          <h2 className="mb-4 md:mb-6">{t("blog.relatedArticles")}</h2>
           <ArticleTileGrid className="md:grid-cols-2" articles={relatedPosts} />
         </Container>
       )}
