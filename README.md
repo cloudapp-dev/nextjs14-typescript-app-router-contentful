@@ -20,7 +20,7 @@ CONTENTFUL_PREVIEW_SECRET=xxxx
 
 import data to your contentful space
 
-Check tutorial -> https://www.cloudapp.dev/nextjs14-complete-example-header-footer-tailwindcss-contentful-part3
+Check tutorial -> https://www.cloudapp.dev/nextjs14-complete-example-adding-internationalization-to-blog-based-contentful-graphql-part5
 
 or simply run this command after the creation of the .env.local file
 
